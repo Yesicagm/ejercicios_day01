@@ -5,12 +5,16 @@
   semanas llegaré a ese peso si bajo “cambio_de_peso” kilos por semana?
 */
 
-const peso = 60
-const peso_ideal = 50
-const cambio_de_peso= 
+let pesoActual = 60 //input inicial
+let peso_ideal = 50
 
-const opearcion = 0 
-const int = 0;
-for (int; int == peso_ideal; int++){
-  opearcion= peso cambio_de_peso 
-}  console.log (peso_ideal);
+let cambio_de_peso = 1
+
+let peso = pesoActual
+let i = 0;
+
+for (i; peso > peso_ideal; i++){
+    peso = peso - cambio_de_peso
+console.log (i + ',' + peso)
+}console.log ('Numero de semanas para alcanzar tu peso ideal ' + i)
+
