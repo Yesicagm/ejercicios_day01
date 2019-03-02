@@ -6,4 +6,19 @@ calificaciones y un arreglo de calificaciones para poder calcular el resultado
 
 */
 
+const calificaciones = [8,9,7,10,7,8]
+let promedioMinimo = 8
+suma = 0
+let promedio = 0
+let i = 0
+for (i; i < calificaciones.length; i++){
+    suma =   suma + calificaciones[i]
+   
+} 
+promedio = suma / calificaciones.length
 
+if (promedio >= promedioMinimo){
+    console.log ("Has aprobado, tu promedio fue de : " + promedio)
+}else{
+    console.log("No aprobaste, tu calificacion es " + promedio)
+}
